@@ -133,6 +133,7 @@ footer {
     background-image: url(/img/ptt_b.svg);
     color:#ecf0f1;
 }
+/**********/
 footer a {
     color: #ecf0f1;
 }
@@ -145,4 +146,71 @@ footer ul {
 }
 footer ul {
     place-content: space-evenly;
+}
+/***********/
+.boton-principal {
+    background: #00b894;
+    color: #ecf0f1;
+    border:  3px solid #00b894;
+    border-radius: 5em;
+    font-weight: bold;
+    font-size: 1.4em;
+    padding: .5em 1.1em;
+    display: inline-block;
+    
+}
+.boton-principal:hover {
+    color:#00b894;
+    background:  #ecf0f1;
+}
+#contacto{
+    position: relative;
+    padding-top: 10em;
+    padding-bottom: 10em;
+}
+#contacto h2{
+    font-size: 2em;
+}
+#contacto label{
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+#contacto input, #contacto textarea{
+    width: 100%;
+    padding: 0.8em;
+    margin-bottom: 1em;
+    border-radius: 0.3em;
+    box-sizing: border-box;
+}
+#contacto button{
+    cursor: pointer;
+}
+#contacto div.contenedor div {
+    width: 45%;
+}
+#contacto iframe{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 45%;
+    height: 100%;
+}
+@media only screen and (max-width: 900px){
+    #contacto div.contenedor{
+        display: block;
+        
+    }
+    #contacto div.contenedor div{
+        
+        width: 100%;
+        
+    }
+    #contacto div.contenedor iframe{
+        position: relative;
+        width: 100%;
+        height: 400px;
+        margin-top: 2em;
+    }
+
 }
