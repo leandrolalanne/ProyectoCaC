@@ -134,6 +134,99 @@ footer {
     color:#ecf0f1;
 }
 /**********/
+#servicios{
+    background: #2d3436;
+    color: #ecf0f1;
+}
+#servicios ul {
+    margin-left: 2em;
+    position: relative;
+}
+#servicios ul li:before{
+    content: '';
+    position: absolute;
+    left: -2em;
+    width: 15px;
+    height: 15px;
+    background-image: url("../imagen/corazon.png");
+    background-size: contain;
+}
+#servicios{
+    position: relative;
+    font-size: 1.4em;
+    padding-top: 7em;
+    padding-bottom: 7em;
+}
+#servicios ul{
+    margin-left: 11em;
+}
+#servicios li{
+    margin-bottom: 1em;
+}
+#servicios ul li:before{
+    width: 30px;
+    height: 30px;
+}
+#servicios img{
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -1em;
+    width: 350px;
+}
+#servicios:before{
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 15em;
+    background: #00b894;
+    left: 0;
+    top: -4em;
+}
+#servicios:after{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 20em;
+    background: url(../imagen/snake.png) no-repeat;
+    background-size: contain;
+    left: -1.5em;
+    top: -4em;
+}
+@media only screen and (max-width: 1500px) {
+    #servicios:after{
+        background: none;
+    }
+}
+@media only screen and (max-width: 1200px){
+    #servicios:before {
+        background: none;
+    }
+
+    #servicios div.contenedor ul{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+    }
+    #servicios ul li{
+        position: relative;
+    }
+    #servicios img {
+        display: none;
+    }
+}
+@media only screen and (max-width: 900px){
+    #servicios{
+        padding: 3em 1em;
+    }  
+}
+@media only screen and (max-width: 700px){
+    #servicios{
+        font-size: 1em;
+    }
+    #servicios ul li {
+        width: 60%;
+    }
+}
 footer a {
     color: #ecf0f1;
 }
