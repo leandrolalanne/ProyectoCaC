@@ -148,7 +148,7 @@ footer {
     left: -2em;
     width: 15px;
     height: 15px;
-    background-image: url("../imagen/corazon.png");
+    background-image: url("../img/mouse.jpg");
     background-size: contain;
 }
 #servicios{
@@ -181,17 +181,17 @@ footer {
     height: 15em;
     background: #00b894;
     left: 0;
-    top: -4em;
+    top: -2em;
 }
 #servicios:after{
     content: "";
     position: absolute;
-    width: 200px;
-    height: 20em;
-    background: url(../imagen/snake.png) no-repeat;
+    width: 150px;
+    height: 15em;
+    background: url(../img/freelance.jpg) no-repeat;
     background-size: contain;
     left: -1.5em;
-    top: -4em;
+    top: -1.5em;
 }
 @media only screen and (max-width: 1500px) {
     #servicios:after{
