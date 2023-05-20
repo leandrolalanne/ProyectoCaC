@@ -133,3 +133,16 @@ footer {
     background-image: url(/img/ptt_b.svg);
     color:#ecf0f1;
 }
+footer a {
+    color: #ecf0f1;
+}
+footer ul {
+    margin-bottom: 0;
+}
+footer ul {
+    display: flex;
+    place-content: space-between;
+}
+footer ul {
+    place-content: space-evenly;
+}
