@@ -138,6 +138,11 @@ footer {
     background: #2d3436;
     color: #ecf0f1;
 }
+#servicios ul, footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
 #servicios ul {
     margin-left: 2em;
     position: relative;
@@ -148,7 +153,7 @@ footer {
     left: -2em;
     width: 15px;
     height: 15px;
-    background-image: url("../img/mouse.jpg");
+    background-image: url("../img/manzana.png");
     background-size: contain;
 }
 #servicios{
