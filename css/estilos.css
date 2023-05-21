@@ -314,10 +314,10 @@ footer ul {
 }
 /******************/
 @media only screen and (max-width:700px){
-    main h1{
+    header {
         margin: 0;
     }
-    main h1 a{
+    header a{
         padding: 0;
     }
     header nav.navbar navbar-expand-lg{
@@ -360,25 +360,26 @@ footer ul {
     body.no-scroll {
         overflow: hidden;
     }
-    header div.collapse ul.navbar-nav {
+    header  {
         position: absolute;
-        top: 0;
-        right: 0;
+        top: 2.5em;
+        right: 0.5em;
         height: 100%;
+        font-weight: bold;
         background-color:#dcdde1;
         padding-top: 0.5em;
         padding-right: 1.5em;
-        opacity: 0.8;
-        color:#ecf0f1;
-        font-size: 1.4em;
+        opacity: 1;
+        color:0px 1px 5px rgba(0, 0, 0, 0.9);;
+        font-size: 1em;
         z-index: 9998;
 
     }
-    header div.collapse ul.navbar-nav a {
+    header div.collapse ul.navbar-nav li.nav-item a {
         color:#ecf0f1;
         background: none;
     }
-    header div.collapse ul.navbar-nav, header div.collapse ul.navbar-nav li{
+    header div.collapse ul.navbar-nav, header div.collapse ul.navbar-nav li.nav-item{
         display:block;
         text-align: right;
     }
@@ -392,7 +393,7 @@ footer ul {
         color:#ecf0f1;
  
     }*/
-    main {
+    header {
         text-align: center;
     }
     #servicios ul li {
