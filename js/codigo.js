@@ -1,4 +1,4 @@
-let key="AIzaSyBODn0wbrFJ4-hjNoA7j5K-TbN0iJ8omUk";
+let key="AIzaSyD-tT6sIqfOzIDjcTaC2elgXOwmCzkss1A";
 let idCanal="UCaoJSYdbR9jKw-t8cyBy4bQ";
 let resPorPagina=25;
 let url="https://www.googleapis.com/youtube/v3/search?key=" + key + "&channelId=" + idCanal + "&part=snippet,id&order=date&maxResults=" + resPorPagina;
