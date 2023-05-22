@@ -1,16 +1,17 @@
-console.log("se carga el codigo");
-window.addEventListener("DOMContentLoaded", (event)=>{
-    console.log("DOM completamente cargado y procesado");
-    const menuBtn= document.getElementById("header button.navbar-toggler");
-    const nav= document.querySelector("header.header sticky-top");
-    const body=document.querySelector("body");
+let key="AIzaSyBODn0wbrFJ4-hjNoA7j5K-TbN0iJ8omUk";
+let idCanal="UCaoJSYdbR9jKw-t8cyBy4bQ";
+let resPorPagina=25;
+let url="https://www.googleapis.com/youtube/v3/search?key=" + key + "&channelId=" + idCanal + "&part=snippet,id&order=date&maxResults=" + resPorPagina;
 
-    menuBtn.addEventListener("click", (event) =>{
-        menuBtn.classList.toggle("abrir");
-        menuBtn.classList.toggle("cerrar");
-        nav.classList.toggle("visible");
-        body.classList.toggle("no-scroll");
-
-
-    });
-});
+let xmlhttp=new XMLHttpRequest();
+xmlhttp.open('GET',url,true);
+xmlhttp.send();
+xmlhttp.onreadystatechange=function(){
+    if(this.readyState==4 && this.status==200){
+        let data=JSON.parse(this.responseText);
+        console.log(data);
+        for(var i=0;i<data.items.length;i++){
+            console.log(data.items[i].snippet.title);
+        }
+    }
+}

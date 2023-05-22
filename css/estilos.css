@@ -130,7 +130,7 @@ footer {
     height: 8vh;
     grid-area: footer;
     background-color: #54a0ff;
-    background-image: url(/img/ptt_b.svg);
+    /*background-image: url(/img/ptt_b.svg);*/
     color:#ecf0f1;
 }
 /**********/
@@ -313,90 +313,3 @@ footer ul {
 
 }
 /******************/
-@media only screen and (max-width:700px){
-    header {
-        margin: 0;
-    }
-    header a{
-        padding: 0;
-    }
-    header nav.navbar navbar-expand-lg{
-        display: flex;
-        place-content: space-between;
-    }
-    header div.collapse navbar-collapse {
-        display: none;
-    }
-    header div.collapse navbar-collapse.visible{
-        display: block;
-    }
-    header button.navbar-toggler{
-        display:block;
-        color: #00b894;
-        background:#ecf0f1;
-        font-size: 1.2em;
-        font-weight: bold;
-        border: 3px solid #00b894;
-        border-radius: 0.3em;
-        position: absolute;
-        right: 0.5em;
-        top: 0.5em;
-        z-index: 9999;
-
-    }
-    header button.navbar-toggler:hover{
-        color:#ecf0f1;
-        background: #00b894;
-    }
-    header button.navbar-toggler.cerrar{
-        display: none;
-    }
-    header button.navbar-toggler.abrir header button.navbar-toggler.cerrar{
-        display: none;
-    }
-    header button.navbar-toggler.cerrar header button.navbar-toggler.abrir{
-        display: block;
-    }
-    body.no-scroll {
-        overflow: hidden;
-    }
-    header  {
-        position: absolute;
-        top: 2.5em;
-        right: 0.5em;
-        height: 100%;
-        font-weight: bold;
-        background-color:#dcdde1;
-        padding-top: 0.5em;
-        padding-right: 1.5em;
-        opacity: 1;
-        color:0px 1px 5px rgba(0, 0, 0, 0.9);;
-        font-size: 1em;
-        z-index: 9998;
-
-    }
-    header div.collapse ul.navbar-nav li.nav-item a {
-        color:#ecf0f1;
-        background: none;
-    }
-    header div.collapse ul.navbar-nav, header div.collapse ul.navbar-nav li.nav-item{
-        display:block;
-        text-align: right;
-    }
-    /*header div.contenedor nav .boton-invertido{
-        border: 0;
-        border-radius: 0;
-
-    }
-    header div.contenedor nav .boton-invertido:hover{
-        background: none;
-        color:#ecf0f1;
- 
-    }*/
-    header {
-        text-align: center;
-    }
-    #servicios ul li {
-        width: 60%;
-    }
-}
