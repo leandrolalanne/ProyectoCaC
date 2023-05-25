@@ -1,17 +1,15 @@
-let key="AIzaSyD-tT6sIqfOzIDjcTaC2elgXOwmCzkss1A";
-let idCanal="UCaoJSYdbR9jKw-t8cyBy4bQ";
-let resPorPagina=25;
-let url="https://www.googleapis.com/youtube/v3/search?key=" + key + "&channelId=" + idCanal + "&part=snippet,id&order=date&maxResults=" + resPorPagina;
+console.log("se carga el codigo");
+window.addEventListener("DOMContentLoaded",(event)=>{
+    console.log("DOM completamente cargado y procesado");
 
-let xmlhttp=new XMLHttpRequest();
-xmlhttp.open('GET',url,true);
-xmlhttp.send();
-xmlhttp.onreadystatechange=function(){
-    if(this.readyState==4 && this.status==200){
-        let data=JSON.parse(this.responseText);
-        console.log(data);
-        for(var i=0;i<data.items.length;i++){
-            console.log(data.items[i].snippet.title);
-        }
-    }
-}
+    const menuBtn=document.getElementById("myDIV");
+
+    menuBtn.addEventListener("click", (event)=>{
+        var x = document.getElementById("myDIV");
+            if (x.innerHTML === "Enviar mensaje") {
+                x.innerHTML = "Mensaje enviado";
+            } else {
+                x.innerHTML = "Enviar mensaje";
+            }
+    })
+})
