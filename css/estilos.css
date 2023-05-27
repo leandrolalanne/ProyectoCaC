@@ -269,11 +269,20 @@ footer ul {
 }
 #contacto{
     position: relative;
-    padding-top: 10em;
+    padding-top: 8em;
     padding-bottom: 10em;
 }
-#contacto h2{
+#contacto h1{
     font-size: 2em;
+    
+}
+#contacto h3{
+    text-align: left;
+    /*font-family: 'Roboto', sans-serif;*/
+    color: #222f3e;
+    font-size: 1.2em;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
 }
 #contacto label{
     display: block;
@@ -283,7 +292,7 @@ footer ul {
 #contacto input, #contacto textarea{
     width: 100%;
     padding: 0.8em;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
     border-radius: 0.3em;
     box-sizing: border-box;
 }
@@ -300,6 +309,7 @@ footer ul {
     width: 45%;
     height: 100%;
 }
+
 @media only screen and (max-width: 900px){
     #contacto div.contenedor{
         display: block;
