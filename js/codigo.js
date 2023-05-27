@@ -4,6 +4,7 @@ window.addEventListener("DOMContentLoaded",(event)=>{
 
     const menuBtn=document.getElementById("myDIV");
     const reservado=document.getElementById("reservado");
+    
 
     menuBtn.addEventListener("click", (event)=>{
         var x = document.getElementById("myDIV");
@@ -20,5 +21,6 @@ window.addEventListener("DOMContentLoaded",(event)=>{
             } else {
                 x.innerHTML = "RESERVAR";
             }
-    })
+    })        
+
 })
