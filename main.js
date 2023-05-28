@@ -6,7 +6,7 @@ const cambioEl = document.getElementById('cambio');
 const tazaEl = document.getElementById('taza');
 
 
-// Fetch Exchange Rate and Update the DOM
+
 function calculate(){
     const moneda_one = monedaEl_one.value;
     const moneda_two = monedaEl_two.value;
@@ -24,7 +24,7 @@ function calculate(){
     
 }
 
-//Event listeners
+
 monedaEl_one.addEventListener('change', calculate);
 cantidadEl_one.addEventListener('input', calculate);
 monedaEl_two.addEventListener('change', calculate);
