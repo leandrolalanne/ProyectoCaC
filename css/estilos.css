@@ -13,6 +13,12 @@ ul{
     font-weight: 500;
     font-size: 18px;
 }
+.servicios ul{
+    text-decoration: none;
+    font-family: 'raleway', sans-serif;
+    font-weight: 400;
+    font-size: 4vh;
+}
 header{
     grid-area: header;
     min-height: 10vh;
@@ -26,6 +32,7 @@ header{
     "nos nos nos nos"
     "boxes boxes boxes boxes"
     "sidebar sidebar serv serv"
+    "conversor conversor prices prices"
     "contacto contacto map map"
     "footer footer footer footer";
     grid-template-columns: 1fr 1fr 1fr 1rf;
@@ -115,8 +122,8 @@ header{
     background-image: url("../img/mujer_laptop.jpg" );
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 150%;
     background-position: cover;
+    background-size: 150vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -239,14 +246,90 @@ p{
     .contenedorPadre{
         display: grid;
         grid-template-areas:
+        "header header header"
         "hero hero hero"
         "boxes boxes boxes"
         "nos nos nos"
         "sidebar sidebar sidebar"
         "serv serv serv"
+        "prices prices prices"
+        "conversor conversor conversor"
         "contacto contacto contacto"
         "map map map"
         "footer footer footer";
         grid-template-columns: 100%;
     }
+}
+/* ************** */
+/* CONVERSOR */
+/* ************** */
+.prices{
+    display: flex;
+    flex-direction: column;
+    grid-area: prices;
+    background-color: #F8F8F8 ;
+    background-size: 150vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+.conversor{
+    grid-area: conversor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f4ff;
+    min-height: 90vh;
+}
+.btn{
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 5px 12px;
+}
+.moneda{
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.moneda select{
+    padding: 10px 20px 10px 10px;
+    border: 1px solid #dedede;
+    font-size: 16px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.moneda input {
+    border: 0;
+    font-size: 30px;
+    text-align: right;
+}
+
+.taza-cambio-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cambio{
+    font-size: 14px;
+    padding: 0 10px;
+    font-weight: 600;
+}
+
+select:focus, input:focus, button:focus{
+    outline: 0;
+}
+
+@media (max-width:600px) {
+    .moneda input{
+        width: 200px;
+    }
+    
 }
