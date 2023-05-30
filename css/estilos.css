@@ -157,7 +157,7 @@ header{
 .map{
     grid-area: map;
     display: flex;
-    min-height: 85vh;
+    min-height: 90vh;
 }
 .contacto{
     grid-area: contacto;
@@ -168,7 +168,7 @@ header{
     align-items: center;
     font-size: smaller;
     padding: 15px;
-    min-height: 85vh;
+    min-height: 90vh;
 }
 .form{
     background-color: #ACB1D6;
@@ -240,27 +240,6 @@ p{
 
 }
 /* ************** */
-/* MEDIA QUERRIES */
-/* ************** */
-@media screen and (max-width:480px){
-    .contenedorPadre{
-        display: grid;
-        grid-template-areas:
-        "header header header"
-        "hero hero hero"
-        "boxes boxes boxes"
-        "nos nos nos"
-        "sidebar sidebar sidebar"
-        "serv serv serv"
-        "prices prices prices"
-        "conversor conversor conversor"
-        "contacto contacto contacto"
-        "map map map"
-        "footer footer footer";
-        grid-template-columns: 100%;
-    }
-}
-/* ************** */
 /* CONVERSOR */
 /* ************** */
 .prices{
@@ -326,7 +305,27 @@ p{
 select:focus, input:focus, button:focus{
     outline: 0;
 }
-
+/* ************** */
+/* MEDIA QUERRIES */
+/* ************** */
+@media screen and (max-width:480px){
+    .contenedorPadre{
+        display: grid;
+        grid-template-areas:
+        "header header header"
+        "hero hero hero"
+        "boxes boxes boxes"
+        "nos nos nos"
+        "sidebar sidebar sidebar"
+        "serv serv serv"
+        "prices prices prices"
+        "conversor conversor conversor"
+        "contacto contacto contacto"
+        "map map map"
+        "footer footer footer";
+        grid-template-columns: 100%;
+    }
+}
 @media (max-width:600px) {
     .moneda input{
         width: 200px;
