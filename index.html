@@ -13,6 +13,7 @@
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 </head>
 <body>
+    <div class="contenedorPadre" id="inicio">
     <header class="header sticky-top"> <!-- BOOSTRAP NAVBAR -->
         <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
             <div class="container-fluid">
@@ -39,7 +40,7 @@
             </div>
         </nav> <!-- fin del BOOSTRAP NAVBAR -->
     </header>
-    <div class="contenedorPadre" id="inicio">
+
         <section class="hero heroContainer" id="heroHome">
                 <div class="heroBox">
                     <h1 id="titulo1">NOMADAS DIGITALES</h1>
@@ -47,27 +48,7 @@
                     <!-- <button id="reservado" type="submit" class="boton-principal"> RESERVAR </button> -->
                 </div>
         </section>
-        <section class="boxes" id="nosotros">
-            <article class="box" id="b1">
-                <div class="boxPic" id="boxPic1"></div>
-                <div class="boxTitulo"><h4>Sede Palermo</h4></div>
-                <div class="boxTexto"><p>Palermo es considerado el barrio verde de Buenos Aires. Cuenta con ilimitadas opciones de entretenimiento, transporte, alimentación y servicios hoteleros, así como atracciones turísticas. </p></div>
-                <a href="#contacto"><button class="bocButton"> Consultar </button></a>
-            </article>
-            <article class="box" id="b1">
-                <div class="boxPic" id="boxPic2"></div>
-                <div class="boxTitulo"><h4>Sede Belgrano</h4></div>
-                <div class="boxTexto"><p>Belgrano es un barrio puramente comercial y residencial, con una amplia oferta gastronómica. Es conocida por las casas Tudor, un estilo arquitectónico de casas antiguas inspirado en la época medieval</p></div>
-                <a href="#contacto"><button class="bocButton"> Consultar </button></a>
-            </article>
-            <article class="box" id="b1">
-                <div class="boxPic" id="boxPic3"></div>
-                <div class="boxTitulo"><h4>Sede Puerto Madero</h4></div>
-                <div class="boxTexto"><p>Puerto Madero , es una zona exclusiva y la más segura de la ciudad. Residencias de alta gama y hoteles de lujo de cinco estrellas predominan en la zona</p></div>
-                <a href="#contacto"><button class="bocButton"> Consultar </button></a>
-            </article>
-        </section>
-        <section class="nos">
+        <section class="nos" id="nosotros">
             <article class="nosText">
                 <h4> ¿Quienes somos?</h4>
                 <p>
@@ -79,9 +60,29 @@
                 </p>
             </article>
         </section>
-        <aside class="sidebar">
+        <section class="boxes">
+            <article class="box" id="b1">
+                <div class="boxPic" id="boxPic1"></div>
+                <div class="boxTitulo"><h4>Sede Palermo</h4></div>
+                <div class="boxTexto"><p>Palermo es considerado el barrio verde de Buenos Aires. Cuenta con ilimitadas opciones de entretenimiento, transporte, alimentación y servicios hoteleros, así como atracciones turísticas. </p></div>
+                <a href="#contacto"><button class="sButton"> Consultar </button></a>
+            </article>
+            <article class="box" id="b1">
+                <div class="boxPic" id="boxPic2"></div>
+                <div class="boxTitulo"><h4>Sede Belgrano</h4></div>
+                <div class="boxTexto"><p>Belgrano es un barrio puramente comercial y residencial, con una amplia oferta gastronómica. Es conocida por las casas Tudor, un estilo arquitectónico de casas antiguas inspirado en la época medieval</p></div>
+                <a href="#contacto"><button class="sButton"> Consultar </button></a>
+            </article>
+            <article class="box" id="b1">
+                <div class="boxPic" id="boxPic3"></div>
+                <div class="boxTitulo"><h4>Sede Puerto Madero</h4></div>
+                <div class="boxTexto"><p>Puerto Madero , es una zona exclusiva y la más segura de la ciudad. Residencias de alta gama y hoteles de lujo de cinco estrellas predominan en la zona</p></div>
+                <a href="#contacto"><button class="sButton"> Consultar </button></a>
+            </article>
+        </section>
+        <aside class="sidebar" id="servicios">
         </aside>
-        <article class="servicios" id="servicios">
+        <article class="servicios">
             <p><iconify-icon icon="ic:baseline-share-location"></iconify-icon></p>
             <ul>
                 <li><span class="iconify" data-icon="ic:baseline-share-location"></span> Ubicación</li>
@@ -103,7 +104,7 @@
                 <input type="text" id="name" name="name"><br>
                 <label for="massage">Mensaje</label><br>
                 <textarea name="massage" id="massage" cols="30" rows="10"></textarea><br>
-                <button id="myDIV" type="submit" class="boton-principal">Enviar mensaje</button><br>
+                <button id="myDIV" type="submit" class="sButton">Enviar mensaje</button><br>
             </form>
         </div>
         </aside>

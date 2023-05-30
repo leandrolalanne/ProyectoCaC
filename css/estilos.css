@@ -17,14 +17,14 @@ header{
     grid-area: header;
     min-height: 10vh;
     background-color: #3E49D3  ;
-    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.9);
 }
 .contenedorPadre{
     display: grid;
     grid-template-areas:
+    "header header header header"
     "hero hero hero hero"
-    "boxes boxes boxes boxes"
     "nos nos nos nos"
+    "boxes boxes boxes boxes"
     "sidebar sidebar serv serv"
     "contacto contacto map map"
     "footer footer footer footer";
@@ -70,7 +70,7 @@ header{
 .boxes{
     /*background-image: url(../img/5594016.jpg);*/
     grid-area: boxes;
-    background-color: #EBF3F9;
+    background-color: #f5f6ff;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -78,6 +78,7 @@ header{
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
+    min-height: 45vh;
 }
 .box{
     background-color: #ACB1D6;
@@ -114,19 +115,21 @@ header{
     background-image: url("../img/mujer_laptop.jpg" );
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 150%;
     background-position: cover;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 30vh;
+    min-height: 90vh;
 }
 .nos{
+    background-color: #ffff;
     grid-area: nos;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 2%;
+    min-height: 45vh;
 }
 .nosText{
     display: flex;
@@ -142,10 +145,12 @@ header{
     align-items: center;
     justify-content: center;
     padding: 15px;
+    min-height: 90vh;
 }
 .map{
     grid-area: map;
     display: flex;
+    min-height: 85vh;
 }
 .contacto{
     grid-area: contacto;
@@ -156,6 +161,7 @@ header{
     align-items: center;
     font-size: smaller;
     padding: 15px;
+    min-height: 85vh;
 }
 .form{
     background-color: #ACB1D6;
@@ -215,6 +221,16 @@ p{
     text-align: center;
     font-family: 'Raleway', sans-serif;
     font-size: 1.4vh;
+}
+.sButton{
+    border: none;
+    border-radius: 8px;
+    width: 8vw;
+    background-color: #EBF3F9;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.9);
+    font-family: 'raleway', sans-serif;
+    color: #3E49D3;
+
 }
 /* ************** */
 /* MEDIA QUERRIES */
