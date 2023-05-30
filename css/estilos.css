@@ -54,25 +54,15 @@ header{
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.9);
     min-height: 90vh;
 }
-#heroHome {
+/* #heroHome {
     background-image:linear-gradient(rgb(130, 148, 196, 0.8), rgba(255, 255, 255, 0.8)), url(../img/bsas.webp);
-}
-#heroNosotros {
-    background-image:linear-gradient(rgba(72, 219, 251, 0.3), rgba(255, 255, 255, 0.8)), url(../img/puerto-madero-588398_1280.jpg);
-}
-#heroServicios {
-    background-image:linear-gradient(rgba(72, 219, 251, 0.3), rgba(255, 255, 255, 0.8)), url(../img/lugares-tur__sticos-de-Buenos-Aires.jpg);
-}
-#heroReservas {
-    background-image:linear-gradient(rgba(72, 219, 251, 0.3), rgba(255, 255, 255, 0.8)), url(../img/teatro-colon_exterior_001.jpg);
-}
-#heroContacto {
-    background-image:linear-gradient(rgba(72, 219, 251, 0.3), rgba(255, 255, 255, 0.8)), url(../img/lugares-tur__sticos-de-Buenos-Aires.jpg);
-}
+} */
 .heroBox{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
+    z-index: 1;
 }
 .boxes{
     /*background-image: url(../img/5594016.jpg);*/
@@ -330,5 +320,41 @@ select:focus, input:focus, button:focus{
     .moneda input{
         width: 200px;
     }
-    
+/* ------------ ANIMACION ------------ */
+}
+#heroHome {
+    position: relative;
+    overflow: hidden;
+}
+#heroHome:before {
+    content: "";
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    width: 120%;
+    height: 120%;
+    background-image: linear-gradient(rgb(130, 148, 196, 0.8), rgba(255, 255, 255, 0.8)), url(../img/bsas.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: kenBurns 30s infinite;
+    z-index: 0;
+}
+/* ------------ KEYFRAMES ------------ */
+@keyframes kenBurns {
+    0% {
+            transform: scale(1) translate(0);
+    }
+    25% {
+            transform: scale(1.1) translate(2.5%, 2.5%);
+    }
+    50% {
+            transform: scale(1.2) translate(5%, 5%);
+    }
+    75% {
+            transform: scale(1.1) translate(2.5%, 2.5%);
+    }
+    100% {
+            transform: scale(1) translate(0);
+    }
 }
