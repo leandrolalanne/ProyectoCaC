@@ -167,10 +167,12 @@ header{
     border-radius: 15px;
 }
 footer {
-    height: 8vh;
+    height: 15vh;
     grid-area: footer;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
     background-color: #DBDFEA;
 }
 /* ******* */
@@ -214,9 +216,9 @@ p{
     font-family: 'Raleway', sans-serif;
     font-size: 1.4vh;
 }
-/* ******* */
-/* FOOTER */
-/* ******* */
+/* ************** */
+/* MEDIA QUERRIES */
+/* ************** */
 @media screen and (max-width:480px){
     .contenedorPadre{
         display: grid;
