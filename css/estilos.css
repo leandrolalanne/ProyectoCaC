@@ -51,7 +51,6 @@ header{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.9);
     min-height: 90vh;
 }
 /* #heroHome {
@@ -89,7 +88,7 @@ header{
     padding: 0px 0px 15px 0px;
     border-radius: 5px;
     margin: 20px;
-    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.9);
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
 }
 .boxPic{
     width: 100%;
@@ -165,9 +164,13 @@ header{
     display:flex;
     justify-content: center;
     align-items: center;
-    justify-content: center;
-    padding: 15px;
-    border-radius: 15px;
+    padding: 25px;
+    border-radius: 7px;
+    border: 0;
+    font-family: Raleway;
+    font-size: 15px;
+    text-align: left;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
 }
 footer {
     height: 15vh;
@@ -177,6 +180,19 @@ footer {
     align-items: center;
     justify-content: space-around;
     background-color: #DBDFEA;
+}
+/* ******* */
+/* BOTONES */
+/* ******* */
+.sButton{
+    border: none;
+    border-radius: 8px;
+    width: 100px;
+    padding: 1%;
+    background-color: #EBF3F9;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.9);
+    font-family: 'raleway', sans-serif;
+    color: #3E49D3;
 }
 /* ******* */
 /* TEXTOS */
@@ -219,29 +235,25 @@ p{
     font-family: 'Raleway', sans-serif;
     font-size: 1.4vh;
 }
-.sButton{
-    border: none;
-    border-radius: 8px;
-    width: 8vw;
-    background-color: #EBF3F9;
-    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.9);
-    font-family: 'raleway', sans-serif;
-    color: #3E49D3;
-
-}
 /* ************** */
 /* CONVERSOR */
 /* ************** */
 .prices{
+    grid-area: prices;
+    background-image: url(../img/prices.jpg);
+    background-size: 90%;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-color: #F8F8F8;
     display: flex;
     flex-direction: column;
-    grid-area: prices;
-    background-color: #F8F8F8 ;
-    background-size: 150vh;
-    display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
+    padding: 35px;
     min-height: 90vh;
+}
+.pricesPic{
+    width: 95%;
 }
 .conversor{
     grid-area: conversor;
@@ -257,6 +269,7 @@ p{
     border-radius: 5px;
     font-size: 12px;
     padding: 5px 12px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 .moneda{
     padding: 40px 0;
@@ -264,7 +277,6 @@ p{
     align-items: center;
     justify-content: space-between;
 }
-
 .moneda select{
     padding: 10px 20px 10px 10px;
     border: 1px solid #dedede;
@@ -273,25 +285,21 @@ p{
     -webkit-appearance: none;
     appearance: none;
 }
-
 .moneda input {
     border: 0;
     font-size: 30px;
     text-align: right;
 }
-
 .taza-cambio-container{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
 .cambio{
     font-size: 14px;
     padding: 0 10px;
     font-weight: 600;
 }
-
 select:focus, input:focus, button:focus{
     outline: 0;
 }
