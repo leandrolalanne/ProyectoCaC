@@ -7,6 +7,31 @@
     text-decoration: none;
     list-style-type: none;
 }
+#nosotros{
+    scroll-margin-top: 10vh;
+}
+#servicios{
+    scroll-margin-top: 10vh;
+}
+#precios{
+    scroll-margin-top: 10vh;
+}
+#contacto{
+    scroll-margin-top: 10vh;
+}
+.contenedorPadre{
+    display: grid;
+    grid-template-areas:
+    "header header header header"
+    "hero hero hero hero"
+    "nos nos nos nos"
+    "boxes boxes boxes boxes"
+    "sidebar sidebar serv serv"
+    "conversor conversor prices prices"
+    "contacto contacto map map"
+    "footer footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr 1rf;
+}
 ul{
     text-decoration: none;
     font-family: 'raleway', sans-serif;
@@ -23,19 +48,6 @@ header{
     grid-area: header;
     min-height: 10vh;
     background-color: #3E49D3  ;
-}
-.contenedorPadre{
-    display: grid;
-    grid-template-areas:
-    "header header header header"
-    "hero hero hero hero"
-    "nos nos nos nos"
-    "boxes boxes boxes boxes"
-    "sidebar sidebar serv serv"
-    "conversor conversor prices prices"
-    "contacto contacto map map"
-    "footer footer footer footer";
-    grid-template-columns: 1fr 1fr 1fr 1rf;
 }
 .heroContainer{
     grid-area: hero;
@@ -64,7 +76,6 @@ header{
     z-index: 1;
 }
 .boxes{
-    /*background-image: url(../img/5594016.jpg);*/
     grid-area: boxes;
     background-color: #f5f6ff;
     background-position: center;
@@ -250,7 +261,7 @@ p{
     justify-content: end;
     align-items: center;
     padding: 35px;
-    min-height: 90vh;
+    min-height:100vh;
 }
 .conversor{
     grid-area: conversor;
@@ -259,7 +270,7 @@ p{
     align-items: center;
     justify-content: center;
     background-color: #f0f4ff;
-    min-height: 90vh;
+    min-height: 100vh;
 }
 .btn{
     cursor: pointer;
@@ -309,8 +320,8 @@ select:focus, input:focus, button:focus{
         grid-template-areas:
         "header header header"
         "hero hero hero"
-        "boxes boxes boxes"
         "nos nos nos"
+        "boxes boxes boxes"
         "sidebar sidebar sidebar"
         "serv serv serv"
         "prices prices prices"
